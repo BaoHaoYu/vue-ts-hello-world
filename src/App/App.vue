@@ -17,15 +17,6 @@
 </template>
 
 <script>
-import logo from '../logo.svg'
-import css from './App.scss'
-export default {
-  name: 'App',
-  data() {
-    return {
-      css,
-      logo
-    }
-  },
-}
+import script from './App.script'
+export default script
 </script>
