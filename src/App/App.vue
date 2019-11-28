@@ -1,13 +1,13 @@
 <template>
-  <div :class="css.App">
-    <header :class="css.App__header">
-      <img :src="logo" :class="css.App__logo" alt="logo" />
+  <div class="App">
+    <header class="App__header">
+      <img :src="logo" class="App__logo" alt="logo" />
       <p>
         Edit
         <code>src/App/App.vue</code> and save to reload.
       </p>
       <a
-        :class="css.App__link"
+        class="App__link"
         href="https://cn.vuejs.org/"
         target="_blank"
         rel="noopener noreferrer"
@@ -15,6 +15,10 @@
     </header>
   </div>
 </template>
+
+<style lang="scss" scoped>
+@import url('./App.scss');
+</style>
 
 <script>
 import script from './App.script'

@@ -41,15 +41,14 @@ const webpackConfig: Partial<webpack.Configuration> = {
         test: /\.scss/,
         use: [
           {
-            loader: 'style-loader',
+            loader: 'vue-style-loader',
+            options: {
+              ssrId: true,
+            },
           },
           {
             loader: 'css-loader',
             options: {
-              modules: {
-                mode: 'local',
-                localIdentName: '[local]__[hash:base64:5]',
-              },
               sourceMap: !isProduction,
               importLoaders: 1,
             },
