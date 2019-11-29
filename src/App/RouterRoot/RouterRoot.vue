@@ -1,8 +1,8 @@
 <template>
   <div class="RouterRoot">
     <div :style="{ marginBottom: 10 }">
-      <router-link :style="{color: '#09d3ac'}" to="/page1">page1</router-link>
-      <router-link :style="{color: '#09d3ac'}" to="/page2">page2</router-link>
+      <router-link :style="{color: 'rgb(185, 75, 75)'}" to="/page1">page1</router-link>
+      <router-link :style="{color: 'rgb(185, 75, 75)'}" to="/page2">page2</router-link>
     </div>
     <router-view></router-view>
   </div>
