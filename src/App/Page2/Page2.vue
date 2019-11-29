@@ -1,5 +1,5 @@
 <template>
-  <div :style="{ background: '#00dcff', height: 260, width: 600, overflowY: 'auto' }">
+  <div>
     <h2>Page2</h2>
 
     <div :style="{ marginBottom: 10 }">

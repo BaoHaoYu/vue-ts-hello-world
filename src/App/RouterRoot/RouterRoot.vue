@@ -1,13 +1,23 @@
 <template>
-  <div>
+  <div class="RouterRoot">
     <div :style="{ marginBottom: 10 }">
-      <router-link to="/page1">page1</router-link>
-      <router-link to="/page2">page2</router-link>
+      <router-link :style="{color: '#09d3ac'}" to="/page1">page1</router-link>
+      <router-link :style="{color: '#09d3ac'}" to="/page2">page2</router-link>
     </div>
     <router-view></router-view>
   </div>
 </template>
+:style="{ background: '#00dcff', height: 260, width: 600, overflowY: 'auto' }"
 
+<style lang="scss" scoped>
+.RouterRoot {
+  width: 100%;
+  bottom: 0;
+  background: #00dcff;
+  height: 260px;
+  overflow-y: auto;
+}
+</style>
 <script>
 export default {
   name: 'RouterRoot',
