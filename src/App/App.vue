@@ -13,6 +13,8 @@
         rel="noopener noreferrer"
       >Learn Vue</a>
     </header>
+
+    <router-view></router-view>
   </div>
 </template>
 
