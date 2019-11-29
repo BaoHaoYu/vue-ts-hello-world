@@ -1,5 +1,5 @@
 import VueRouter from 'vue-router'
-import * as chunk from './chunk.js'
+import * as chunk from './chunk'
 // @ts-ignore
 import RouterRoot from './RouterRoot.vue'
 export default new VueRouter({
