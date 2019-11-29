@@ -7,7 +7,6 @@
     <router-view></router-view>
   </div>
 </template>
-:style="{ background: '#00dcff', height: 260, width: 600, overflowY: 'auto' }"
 
 <style lang="scss" scoped>
 .RouterRoot {

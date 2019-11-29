@@ -13,8 +13,8 @@
 <style lang="scss" scoped>
 .active {
   font-size: 25px;
-  font-weight: 'bold';
-  color: '#fff700';
+  font-weight: bold;
+  color: #fff700;
 }
 </style>
 
