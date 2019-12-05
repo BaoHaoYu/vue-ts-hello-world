@@ -118,6 +118,19 @@ const webpackConfig: Partial<webpack.Configuration> = {
     filename: `[name]${isProduction ? '.[hash:8]' : ''}.js`,
     chunkFilename: `[name]${isProduction ? '.[hash:8]' : ''}.chunk.js`,
     path: path.join(__dirname, '__build__'),
+    devtoolModuleFilenameTemplate: (info) => {
+      let $filename = 'sources://' + info.absoluteResourcePath
+      for (const iterator of info.allLoaders) {
+        if (iterator.match(/type=script/)) {
+          return $filename
+        }
+      }
+      if (info.resourcePath.match(/\.vue$/)) {
+        $filename = 'webpack-generated:///' + info.absoluteResourcePath + '?' + info.hash
+      }
+      return $filename
+    },
+    devtoolFallbackModuleFilenameTemplate: 'webpack:///[resource-path]?[hash]',
   },
 }
 
