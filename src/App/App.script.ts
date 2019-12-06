@@ -1,5 +1,4 @@
 import { ComponentOptions } from 'vue'
-// @ts-ignore
 import logo from '../logo.svg'
 export default {
   name: 'App',
