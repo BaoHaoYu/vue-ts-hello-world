@@ -5,5 +5,5 @@ import App from './App/App.vue'
 Vue.config.productionTip = false
 
 new Vue({
-  render: (h) => h(App),
+  render: (createElement) => createElement(App),
 }).$mount('#root')
