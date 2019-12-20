@@ -7,11 +7,7 @@ import router from './App/RouterRoot/router'
 Vue.config.productionTip = false
 Vue.use(Router)
 
-function renderApp() {
-  new Vue({
-    router,
-    render: (h) => h(App),
-  }).$mount('#root')
-}
-
-renderApp()
+new Vue({
+  router,
+  render: (createElement) => createElement(App),
+}).$mount('#root')

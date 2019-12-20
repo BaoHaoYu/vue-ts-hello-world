@@ -23,6 +23,13 @@
 </style>
 
 <script>
-import script from './App.script'
-export default script
+import logo from '../logo.svg'
+export default {
+  name: 'App',
+  data() {
+    return {
+      logo,
+    }
+  },
+}
 </script>
